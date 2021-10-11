@@ -1,0 +1,52 @@
+<div id="column_settings" class="column_settings">
+    <div class="column_settings__head head_2">
+        Дополнительные поля
+    </div>
+    <div class="column_settings__scroll-holder">
+        <div class="column_settings__columns_list clearfix custom-scroll" id="list_column_settings_holder"></div>
+        <div class="scroller__track_v" style="bottom:20px;top:20px;">
+            <div class="scroller__bar scroller__bar_v"></div>
+        </div>
+    </div>
+    <div class="column_settings__done_wrapper">
+        <button type="button"  class="button-input   button-input-disabled button-done-input" tabindex="-1" id="column_settings__submit" >
+            <span class="button-input-inner ">
+                <span class="button-input-inner__text">
+                    Готово
+                </span>
+            </span>
+        </button>
+        <button type="button"  class="button-input button-cancel column_settings__done_wrapper__cancel" tabindex="" id="columns_settings_cancel_btn" style="">
+            <span>
+                Отменить
+            </span>
+        </button>
+        <div class="column_settings__delete_item">
+            <span class="icon icon-trash"></span>
+        </div>
+    </div>
+</div>
+<div class="list__table__holder js-hs-scroller custom-scroll  " >
+    <div class="js-scroll-container list__table  list__table-no-items" id="list_table" >
+        <div class="list-row list-row-head js-list-row js-list-row-head " id="list_head">
+            <div class="list-row__cell js-hs-prevent list-row__cell-head cell-head list-row__cell-template-id list-row__cell-id">
+                <div class="cell-head__inner">
+                    <label class="control-checkbox   ">  
+                        <div class="control-checkbox__body">
+                            <input type="checkbox" class="" name="" id="list_all_checker" disabled value=""  data-value="" />
+                            <span class="control-checkbox__helper "></span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list__no-items" style=" ">          
+        <p style="color:#f37575;margin-bottom:5px;">
+            К сожалению, элементов с выбранными вами условиями не найдено.&nbsp;
+            <a href="//list/?skip_filter=Y" class="js-list-reset js-navigate-link">
+                Показать все
+            </a>
+        </p>
+    </div>
+</div>

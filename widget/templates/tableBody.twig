@@ -1,0 +1,79 @@
+{% if data.vacancies %}
+    {% for vacancy in data.vacancies %}
+        <div data-id = "tableRow" class="{{ data.widgetPrefix }}_list-row js-list-row js-pager-list-item__1  js-page-delimiter">
+
+            <div data-id = "tableRow_priority__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-name list-row__cell-name" data-field-code="priority" data-field-id="10">
+                <div data-id = "tableRow_priority__inner" class="{{ data.widgetPrefix }}_content-table__item__inner {{ data.widgetPrefix }}_content-table__item__inner-template-name {{ data.widgetPrefix }}_has-tags" style="display: inherit;">
+                    <span data-id = "tableRow_priority__span" style="white-space: normal;">
+                        {{ vacancy.priority }}
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_shopName__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-name list-row__cell-name" data-field-code="shopName" data-field-id="10">
+                <div data-id = "tableRow_shopName__inner" class="{{ data.widgetPrefix }}_content-table__item__inner {{ data.widgetPrefix }}_content-table__item__inner-template-name {{ data.widgetPrefix }}_has-tags" style="display: inherit;">
+                    <span data-id = "tableRow_shopName__span" style="white-space: normal;">
+                        {{ vacancy.shopName }}
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_address__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-main_contact list-row__cell-main_contact" data-field-code="address" data-field-id="20">
+                <div data-id = "tableRow_address__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_address__span" style="white-space: normal;">
+                        {{ vacancy.address }}
+                    </span>
+                </div>
+            </div>
+            
+
+            <div data-id = "tableRow_distance__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-link list-row__cell-contact_company_name" data-field-code="distance">
+                <div data-id = "tableRow_distance__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_distance__span" style="white-space: normal;">
+                        <span id="tableRow_distance__span_value">{{ vacancy.distance }}</span>
+                        <span>&nbsp;км</span>
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_vacancy__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-link list-row__cell-contact_company_name" data-field-code="vacancy">
+                <div data-id = "tableRow_vacancy__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_vacancy__span" data-value="{{ vacancy.needRaw }}" style="white-space: normal;">
+                        {{ vacancy.vacancy }}
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_gender__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-link list-row__cell-contact_company_name" data-field-code="gender">
+                <div data-id = "tableRow_gender__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_gender__span" style="white-space: normal;">
+                        {{ vacancy.gender }}
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_salary__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-link list-row__cell-contact_company_name" data-field-code="salary">
+                <div data-id = "tableRow_salary__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_salary__span" style="white-space: normal;">
+                        {{ vacancy.salary }}
+                    </span>
+                </div>
+            </div>
+
+            <div data-id = "tableRow_intervals__wrapper" class="{{ data.widgetPrefix }}_list-row__cell js-list-row__cell list-row__cell-template-link list-row__cell-contact_company_name" data-field-code="intervals">
+                <div data-id = "tableRow_intervals__inner" class="{{ data.widgetPrefix }}_content-table__item__inner" style="display: inherit;">
+                    <span data-id = "tableRow_intervals__span" style="white-space: normal;">
+                        {{ vacancy.intervals }}
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    {% endfor %}
+{% else %}
+    <div data-id="tableRow_nichts" id="gigantSearchNearestShops_no-items" class="gigantSearchNearestShops_list-row js-list-row js-pager-list-item__1  js-page-delimiter" style="display: block; text-align: center;">          
+        <p style="color:#f37575;margin-bottom:5px; padding-top: 30px;">
+            К сожалению, подходящих магазинов с выбранными Вами условиями не найдено.
+        </p>
+    </div>
+{% endif %}

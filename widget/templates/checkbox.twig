@@ -1,0 +1,13 @@
+<label class="control-checkbox   is-checked">  
+    <div class="control-checkbox__body">
+        <input type="checkbox" class="" name="{{ data.name }}" id="{{ data.id }}" 
+        {% if data.checked %}
+            checked="checked"
+        {% endif %}
+        value=""  data-value="" />
+        <span class="control-checkbox__helper "></span>
+    </div>
+    <div class="control-checkbox__text element__text " title="{{ data.text }}">
+        {{ data.text }}
+    </div>
+</label>

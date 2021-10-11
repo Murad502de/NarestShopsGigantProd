@@ -1,0 +1,387 @@
+.gigantSearchNearestShops_list__table__holder {
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transition: -webkit-transform .2s;
+    transition: transform .2s;
+    transition: transform .2s,-webkit-transform .2s;
+}
+
+.gigantSearchNearestShops_js-hs-scroller {
+    overflow-x: hidden; /*scroll!important;*/
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.gigantSearchNearestShops_custom-scroll {
+    -webkit-overflow-scrolling: touch;
+}
+
+.gigantSearchNearestShops_list__table {
+    display: table;
+    min-width: 900px;
+    table-layout: fixed;
+    position: relative;
+    width: 100%;
+}
+
+.gigantSearchNearestShops_list-row {
+    display: table-row;
+    position: relative;
+    background: #fff;
+}
+
+.gigantSearchNearestShops_js-hs-prevent {
+    cursor: auto;
+}
+
+.gigantSearchNearestShops_list-row__cell {
+    display: table-cell;
+    font-size: 15px;
+    line-height: 19px;
+    min-width: 120px;
+    margin: 0;
+    border-top: 1px solid #f1f1f1;
+    vertical-align: top;
+    position: relative;
+    color: #313942;
+    box-sizing: border-box;
+}
+
+.gigantSearchNearestShops_cell-head {
+    color: rgba(133,145,165,.6);
+    border-top: 0;
+    padding: 0;
+}
+
+.gigantSearchNearestShops_list-row__cell-template-id {
+    padding: 0;
+    min-width: 37px;
+    width: 37px;
+    vertical-align: middle;
+}
+
+.gigantSearchNearestShops_list-row__cell-template-id .gigantSearchNearestShops_control-checkbox input:checked~.gigantSearchNearestShops_control-checkbox__helper:before, .multiple-actions__top-checkbox:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 44px;
+    background: #158fd2;
+    right: 26px;
+    top: -11px;
+    z-index: 5;
+}
+/*.gigantSearchNearestShops_list-row__cell:first-child {
+    padding-left: 14px;
+}*/
+
+.gigantSearchNearestShops_cell-head__inner {
+    position: relative;
+    white-space: nowrap;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+}
+
+.gigantSearchNearestShops_checkboxes-search__list-tips, .gigantSearchNearestShops_control-checkbox {
+    position: relative;
+    border: 0;
+}
+
+.gigantSearchNearestShops_control-checkbox {
+    display: -webkit-inline-box;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0 7px 0 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gigantSearchNearestShops_control-checkbox__body, .gigantSearchNearestShops_control-checkbox__helper {
+    display: -webkit-inline-box;
+    display: inline-flex;
+}
+
+.gigantSearchNearestShops_control-checkbox__helper {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    z-index: 3;
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.gigantSearchNearestShops_control-checkbox input {
+    position: absolute;
+    opacity: 0;
+    z-index: 4;
+    width: 20px;
+    height: 20px;
+}
+
+.gigantSearchNearestShops_js-cell-head_sortable {
+    /*cursor: pointer;*/
+}
+
+.gigantSearchNearestShops_cell-head__inner-content {
+    font-family: 'PT Sans Caption','Arial Black',sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 19px;
+    width: 100%;
+    z-index: 1;
+    padding: 12px 10px;
+    height: 42px;
+    box-sizing: border-box;
+    color: inherit;
+    margin-right: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gigantSearchNearestShops_cell-head__title {
+    position: relative;
+    z-index: 52;
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    -webkit-transition: color .2s ease;
+    transition: color .2s ease;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+}
+
+.gigantSearchNearestShops_content-table__item__inner {
+    white-space: nowrap;
+    padding: 10px 0 10px 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    height: 18px;
+    position: relative;
+}
+
+.gigantSearchNearestShops_content-table__item__inner-template-name {
+    display: -webkit-box;
+    display: flex;
+    position: relative;
+}
+
+.gigantSearchNearestShops_content-table__item__inner-template-name.gigantSearchNearestShops_has-tags {
+    margin-right: 8px;
+}
+
+.gigantSearchNearestShops_control-checkbox input:checked~.gigantSearchNearestShops_control-checkbox__helper:not(.control-checkbox__helper_minus) {
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJfeDIwMTRfX0l0ZW1fMV8iIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCINCgkgeT0iMHB4IiB3aWR0aD0iMTJweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTIgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEyIDExIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnIGlkPSJjaGVjay5zdmciPg0KCTxnPg0KCQk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzJFMzY0MCIgZD0iTTExLjQ3NiwwLjE1MWMtMC4zNzctMC4yOTYtMC45OTctMC4xMzktMS4zNTksMC4zMjRMNS4xNTMsNi41Mw0KCQkJQzUuMDc3LDYuNjI0LDQuODg0LDYuNjU3LDQuNzg1LDYuNTk1TDEuNzIzLDQuNjg4QzEuMjQsNC4zNDIsMC42MjQsNC4zNjYsMC4zNDksNC43NTNjLTAuMjY4LDAuMzc4LTAuMTgsMC45OTQsMC4yMDksMS40NjQNCgkJCWwzLjUwOSw0LjIzNEM0LjM2MSwxMC44MDUsNC43NDIsMTEsNS4xNCwxMWMwLjQ2NSwwLDAuODk1LTAuMjY2LDEuMTc3LTAuNzI4bDUuMjY0LTguNjE1QzExLjkxNiwxLjEwOSwxMS44NzEsMC40NjIsMTEuNDc2LDAuMTUxDQoJCQl6Ii8+DQoJPC9nPg0KPC9nPg0KPC9zdmc+DQo=) no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+
+.gigantSearchNearestShops_control-checkbox input:checked~.gigantSearchNearestShops_control-checkbox__helper.gigantSearchNearestShops_minus {
+    background: #fff url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCAxMGgyNHY0aC0yNHoiLz48L3N2Zz4=) no-repeat;
+    background-size: 55%;
+    background-position: center;
+}
+
+.advanced_settings__button {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.gigantSearchNearestShops_round_status.gigantSearchNearestShops_off::before {
+    content: "";
+    border-radius: 50%;
+    background: red;
+    color: red;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40%;
+}
+
+.gigantSearchNearestShops_round_status.gigantSearchNearestShops_on::before {
+    content: "";
+    border-radius: 50%;
+    background: green;
+    color: green;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 40%;
+}
+
+.gigantSearchNearestShops_status_text {
+    padding-left: 15px;
+}
+
+/* MOdal distribution BEGIN*/
+
+.dist_progress_status {
+    height: 32px;
+    margin-bottom: 3px;
+    width: 100%;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.dist_progress_filter {
+    width: 0;
+    height: 100%;
+    flex-shrink: 1;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.dist_progress_status-text {
+    flex-shrink: 0;
+    font-size: 25px;
+    color: #1375ab;
+}
+
+.dist_progress_bar-wrapper {
+    height: 5px;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.dist_progress_bar {
+    position: relative;
+    width: 0;
+    height: 5px;
+    background: #1375ab;
+    -webkit-transition: width 1s;
+    transition: width 1s;
+}
+
+.dist_modal-body_actions {
+    margin-top: 23px;
+    font-size: 0;
+    display: -webkit-box;
+    display: flex;
+}
+
+/* Warnungsmodalfenster BEGIN */
+
+.dist_warnung__wrapper {
+    display: flex;
+}
+
+/*
+.dist_warnung_logo__wrapper {
+}
+*/
+
+.dist_warnung__container {
+    margin-left: 30px;
+}
+
+.dist_warnung__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.dist_warnung__title {
+    font-weight: bold;
+}
+
+.dist_warnung__message {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Warnungsmodalfenster END */
+
+/* MOdal distribution END */
+
+.left_color_text {
+    color: rgba(133,145,165,.6);
+}
+
+.gigantSearchNearestShops_cell-head__inner-content:hover {
+    background: #E2E5EA;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+/*
+div[data-id="tableRow"] {
+    cursor: pointer;
+}
+*/
+
+div[data-id="tableRow"]:hover {
+    background: #E2E5EA;
+    transition: 500ms;
+}
+
+.gigantSearchNearestShops_switcher {
+    display: flex;
+    padding-left: 40%;
+    padding-right: 60%;
+    padding-top: 10px;
+    height: 30px;
+}
+
+.gigantSearchNearestShops_switcher__inner {
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.gigantSearchNearestShops_weight_dist {
+    cursor: pointer;
+}
+
+.half-width > input {
+    width: 100%;
+}
+
+.gigantSearchNearestShops_table-head__address {
+    width: 300px;
+}
+
+.gigantSearchNearestShops_table-head__client {
+    width: 250px;
+}
+
+a.gigantSearchNearestShops_table-row_link:link {
+    color: black;
+}
+a.gigantSearchNearestShops_table-row_link:visited {
+    color: black;
+}
+a.gigantSearchNearestShops_table-row_link:active {
+    color: black;
+}
+a.gigantSearchNearestShops_table-row_link:hover {
+    color: red;
+    transition: 400ms;  
+}
+
+.gigantSearchNearestShops-vacancy-name-clickable:hover {
+    color: red;
+    transition: 400ms;  
+}
